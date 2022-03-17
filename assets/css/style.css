@@ -138,6 +138,10 @@ body {
   opacity: 0;
 }
 
+.images li:first-child .image {
+  opacity: 1;
+}
+
 .show { opacity: 1;}
 
 nav {
@@ -193,6 +197,10 @@ nav ul li { cursor: pointer;}
 .links li.active .work::after,
 .links li.active .blog::after,
 .links li.active .about::after{
+  color: #8e44ad;
+}
+
+.active {
   color: #8e44ad;
 }
 
