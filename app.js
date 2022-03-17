@@ -28,4 +28,3 @@ function remove_active() {
         item.classList.remove('active')
     })
 }
-
