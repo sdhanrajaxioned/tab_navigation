@@ -108,52 +108,102 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8e44ad;
+}
+
+.tab-navigation {
+  width: 340px;
+  height: 600px;
+  border: 3px solid #EEE;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 540px;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.images li:first-child .image {
+  opacity: 1;
+}
+
+.show { opacity: 1;}
+
+nav {
+  padding: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  
+}
+
+.home,
+.work,
+.blog,
+.about {
+  display: block;
+  text-indent: -9999px;
+  padding-right: 27%;
+}
+
+.home::after,
+.work::after,
+.blog::after,
+.about::after {
+  color:#777;
+  font-family: "fontAwesome";
+  float: right;
+  text-indent: 0;
+}
+
+.home::after { content: "\e3af";}
+.work::after { content: "\f0b1";}
+.blog::after { content: "\f518"; }
+.about::after { content: "\f500" }
 
 
+.links {
+  display: flex;
+  justify-content: space-around;
+}
 
+.links li a{ color:#777 }
+nav ul li { cursor: pointer;}
 
+.home:hover::after,
+.work:hover::after,
+.blog:hover::after,
+.about:hover::after,
+.links li a:hover,
+.links li.active a,
+.links li.active .home::after,
+.links li.active .work::after,
+.links li.active .blog::after,
+.links li.active .about::after{
+  color: #8e44ad;
+}
 
-
+.active {
+  color: #8e44ad;
+}
 
 /*=================================
   main styling ends here
 =================================*/
-
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
