@@ -1,12 +1,6 @@
 var images = document.querySelectorAll('.images li');
 var listItem = document.querySelectorAll('.links li')
 
-
-console.log(images.forEach((i) => console.log(i)))
-
-//images.forEach((i) => console.log(i.dataset.filter))
-// listItem.forEach((i) => console.log(i.dataset.filter))
-
 listItem.forEach(function (li_item) {
     // li_item.classList.remove('active')
     li_item.addEventListener('click', function (e) {
